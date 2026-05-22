@@ -40,6 +40,7 @@ document.getElementById('orderForm');
 
 if(form){
 
+
 form.addEventListener('submit',
 
 function(e){
@@ -49,6 +50,10 @@ e.preventDefault();
 const customerName =
 document.getElementById(
 'customerName').value;
+
+const customerPhone =
+document.getElementById(
+'customerPhone').value;
 
 const selected =
 serviceSelect.options[
@@ -66,6 +71,12 @@ const half = price / 2;
 const transaction =
 document.getElementById(
 'transactionID').value;
+
+const message =
+document.getElementById(
+'orderMessage').value;
+
+/* RECEIPT */
 
 document.getElementById(
 'receiptName').innerText =
@@ -93,25 +104,59 @@ document.getElementById(
 'orderStatus').innerText =
 'CONFIRMED';
 
+/* SEND EMAIL */
+
+emailjs.send(
+
+"YOUR_SERVICE_ID",
+
+"YOUR_TEMPLATE_ID",
+
+{
+
+customer_name:
+customerName,
+
+customer_phone:
+customerPhone,
+
+service:
+service,
+
+transaction_id:
+transaction,
+
+message:
+message
+
+}
+
+)
+
+.then(function(){
+
+alert(
+"Order Submitted Successfully"
+);
+
+});
+
+/* WHATSAPP */
+
 let whatsappMessage =
 
-`Hello DJ MICKY PRO,
-
-NEW ORDER
+`NEW ORDER
 
 Customer:
 ${customerName}
 
+Phone:
+${customerPhone}
+
 Service:
 ${service}
 
-Total:
-UGX ${price}
-
-Half Paid:
-UGX ${half}
-
-Transaction ID:
+Transaction:
 ${transaction}`;
 
 window.open(

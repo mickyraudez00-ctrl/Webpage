@@ -363,3 +363,200 @@ box-shadow:
 0 0 45px #ff00ff;
 
 }
+/* =========================
+MOBILE RESPONSIVE DESIGN
+========================= */
+
+@media screen and (max-width:900px){
+
+/* HEADER */
+
+header{
+
+flex-direction:column;
+
+padding:15px;
+
+text-align:center;
+
+gap:15px;
+
+}
+
+/* NAVIGATION */
+
+nav{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:10px;
+
+width:100%;
+
+}
+
+nav a{
+
+padding:10px 15px;
+
+font-size:14px;
+
+}
+
+/* HERO SECTION */
+
+.hero{
+
+height:auto;
+
+padding:60px 20px;
+
+}
+
+.hero h2{
+
+font-size:2.2rem;
+
+line-height:1.3;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+line-height:1.7;
+
+}
+
+/* LOGO */
+
+.logo{
+
+width:60px;
+
+height:60px;
+
+}
+
+/* MAIN LOGO */
+
+.main-logo{
+
+font-size:2rem;
+
+letter-spacing:2px;
+
+text-align:center;
+
+}
+
+/* GRID CARDS */
+
+.cards{
+
+grid-template-columns:1fr;
+
+padding:20px;
+
+}
+
+/* CARD */
+
+.card{
+
+padding:25px;
+
+}
+
+/* ORDER LAYOUT */
+
+.order-layout{
+
+grid-template-columns:1fr;
+
+padding:15px;
+
+}
+
+/* BOXES */
+
+.order-box,
+.receipt-box,
+.download-box{
+
+padding:20px;
+
+}
+
+/* INPUTS */
+
+input,
+textarea,
+select{
+
+font-size:16px;
+
+}
+
+/* BUTTONS */
+
+.btn{
+
+width:100%;
+
+padding:15px;
+
+font-size:16px;
+
+}
+
+/* TITLES */
+
+.section-title{
+
+font-size:2rem;
+
+padding:0 10px;
+
+}
+
+/* SOFTWARE LOGOS */
+
+.software-logo{
+
+width:90px;
+
+height:90px;
+
+}
+
+/* SAMPLE IMAGES */
+
+.sample-image{
+
+height:200px;
+
+}
+
+/* AUDIO PLAYER */
+
+audio{
+
+width:100%;
+
+}
+
+/* FOOTER */
+
+footer{
+
+padding:20px;
+
+font-size:14px;
+
+}
+
+  }

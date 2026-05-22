@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Services</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo-area">
+
+<img src="logo.png" class="logo">
+
+<div>
+
+
+<h1 class="main-logo">
+DJ MICKY PRO
+</h1>
+<p>Online Order System</p>
+
+</div>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">What I Do</a>
+<a href="services.html">Services</a>
+<a href="downloads.html">Downloads</a>
+
+
+</nav>
+
+</header>
+
+<section>
+
+<h2 class="section-title">
+ONLINE ORDER SYSTEM
+</h2>
+
+<div class="order-layout">
+
+<!-- ORDER FORM -->
+
+<div class="order-box">
+
+<form id="orderForm">
+
+<input type="text"
+id="customerName"
+placeholder="Customer Name"
+required>
+
+<input type="tel"
+id="customerPhone"
+placeholder="Phone Number"
+required>
+
+<select id="serviceSelect" required>
+
+<option value="">
+Select Service
+</option>
+
+<option value="DJ Drop"
+data-price="7000">
+
+3 DJ Drops - UGX 7,000
+
+</option>
+
+<option value="Virtual DJ Installation"
+data-price="5000">
+
+Virtual DJ  - UGX ,5000
+
+</option>
+
+<option value="Serato DJ Pro"
+data-price="5000">
+
+Serato DJ Pro - UGX 5,000
+
+</option>
+
+<option value="Rekordbox"
+data-price="5000">
+
+Cross Dj - UGX 5,000
+
+</option>
+
+<option value="DJ Mapping"
+data-price="5000">
+
+DJ Mapping - UGX 5,000
+
+</option>
+
+</select>
+
+<div class="price-tag"
+id="priceDisplay">
+
+Service price appears here
+
+</div>
+
+<div class="payment-box">
+
+<h3>AIRTEL MONEY</h3>
+
+<p>0751012463</p>
+
+<p>Nassinde Shamirah</p>
+
+<p>
+Pay Half Before Confirming and enter the transaction ID below
+</p>
+
+</div>
+
+<input type="text"
+id="transactionID"
+placeholder="Transaction ID"
+required>
+
+<textarea id="orderMessage"
+placeholder="Describe your order">
+</textarea>
+
+<button type="submit"
+class="btn">
+
+CONFIRM ORDER
+
+</button>
+
+</form>
+
+</div>
+
+<!-- RECEIPT -->
+
+<div class="receipt-box">
+
+<h2>CUSTOMER RECEIPT</h2>
+
+<div class="receipt-item">
+
+<span>Customer</span>
+
+<span id="receiptName">---</span>
+
+</div>
+
+<div class="receipt-item">
+
+<span>Service</span>
+
+<span id="receiptService">---</span>
+
+</div>
+
+<div class="receipt-item">
+
+<span>Total</span>
+
+<span id="receiptPrice">---</span>
+
+</div>
+
+<div class="receipt-item">
+
+<span>Half Payment</span>
+
+<span id="receiptHalf">---</span>
+
+</div>
+
+<div class="receipt-item">
+
+<span>Transaction ID</span>
+
+<span id="receiptTransaction">---</span>
+
+</div>
+
+<div class="status-box">
+
+<h1 id="orderStatus">
+WAITING
+</h1>
+
+</div>
+
+<button class="btn"
+onclick="window.print()">
+
+PRINT RECEIPT
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

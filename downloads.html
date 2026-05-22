@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Downloads</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo-area">
+
+<img src="logo.png" class="logo">
+
+<div>
+
+<h1 class="main-logo">
+DJ MICKY PRO
+</h1>
+<p>Premium Downloads</p>
+
+</div>
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="about.html">What I Do</a>
+<a href="services.html">Services</a>
+<a href="downloads.html">Downloads</a>
+
+
+</nav>
+
+</header>
+<section>
+
+<h2 class="section-title">
+FREE DJ SOFTWARE DOWNLOADS
+</h2>
+
+
+<div class="cards">
+
+<!-- VIRTUAL DJ -->
+
+<div class="card">
+
+<img src="virtual.png"
+class="software-logo">
+
+<h3>Virtual DJ</h3>
+
+<p>
+Professional DJ mixing software.
+</p>
+
+<a href="virtual.zip" download>
+
+<button class="btn">
+DOWNLOAD FREE
+</button>
+
+</a>
+
+</div>
+
+<!-- SERATO -->
+
+<div class="card">
+
+<img src="serato.png"
+class="software-logo">
+
+<h3>Serato DJ Pro</h3>
+
+<p>
+Professional DJ controller software.
+</p>
+
+<a href="serato.zip" download>
+
+<button class="btn">
+DOWNLOAD FREE
+</button>
+
+</a>
+
+</div>
+
+<!-- REKORDBOX -->
+
+<div class="card">
+
+<img src="rekord.png"
+class="software-logo">
+
+<h3>Cross dj</h3>
+
+<p>
+Pioneer DJ professional software.
+</p>
+
+<a href="Rekordbox.zip" download>
+
+<button class="btn">
+DOWNLOAD FREE
+</button>
+
+</a>
+
+</div>
+
+
+<div class="card">
+
+<img src="fl studio.jpg"
+class="software-logo">
+
+<h3>Fl Studio</h3>
+
+<p>
+Music production and beat making.
+</p>
+
+<a href="fl studio.zip" download>
+
+<button class="btn">
+DOWNLOAD FREE
+</button>
+
+</a>
+
+</div>
+
+
+
+<!-- ADOBE AUDITION -->
+
+<div class="card">
+
+<h3>Adobe Audition</h3>
+
+<p>
+Professional audio editing software.
+</p>
+
+<a href="audition.zip" download>
+
+<button class="btn">
+DOWNLOAD FREE
+</button>
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">
+DOWNLOAD 2026 MAPPERS FREE
+</h2>
+
+<div class="download-box">
+
+<h3>
+Download DJ Software
+</h3>
+
+<p>
+Enter Unlock Code
+</p>
+
+<input type="password"
+id="unlockCode"
+placeholder="Unlock Code">
+
+<button class="btn"
+onclick="checkCode()">
+
+UNLOCK DOWNLOAD
+
+</button>
+
+<p id="downloadMessage"></p>
+
+<a id="downloadLink"
+href="mappers2026.zip"
+download
+style="display:none;">
+
+DOWNLOAD NOW
+
+</a>
+
+</div>
+
+</section>
+
+<script>
+
+function checkCode(){
+
+let code =
+document.getElementById("unlockCode").value;
+
+let message =
+document.getElementById("downloadMessage");
+
+let link =
+document.getElementById("downloadLink");
+
+let correctCode =
+"djmick26";
+
+if(code === correctCode){
+
+message.innerHTML =
+"Access Granted";
+
+link.style.display =
+"inline-block";
+
+link.click();
+
+}
+else{
+
+message.innerHTML =
+"Wrong Unlock Code";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>

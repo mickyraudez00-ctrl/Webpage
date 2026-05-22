@@ -50,7 +50,9 @@ e.preventDefault();
 const customerName =
 document.getElementById(
 'customerName').value;
-
+document.getElementById(
+'loadingPopup'
+).style.display = 'flex';
 const customerPhone =
 document.getElementById(
 'customerPhone').value;
@@ -138,7 +140,17 @@ message
 alert(
 "Order Submitted Successfully"
 );
+setTimeout(function(){
 
+document.getElementById(
+'loadingPopup'
+).style.display = 'none';
+
+alert(
+"ORDER CONFIRMED SUCCESSFULLY"
+);
+
+},3000);
 });
 
 /* WHATSAPP */

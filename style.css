@@ -560,3 +560,38 @@ font-size:14px;
 }
 
   }
+@media screen and (max-width:500px){
+
+.hero h2{
+
+font-size:1.8rem;
+
+}
+
+.main-logo{
+
+font-size:1.5rem;
+
+}
+
+nav a{
+
+font-size:12px;
+
+padding:8px 12px;
+
+}
+
+.btn{
+
+font-size:14px;
+
+}
+
+.section-title{
+
+font-size:1.6rem;
+
+}
+
+}

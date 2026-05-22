@@ -108,9 +108,9 @@ document.getElementById(
 
 emailjs.send(
 
-"YOUR_SERVICE_ID",
+"service_5b1qgvg",
 
-"YOUR_TEMPLATE_ID",
+"template_708jsxg",
 
 {
 
